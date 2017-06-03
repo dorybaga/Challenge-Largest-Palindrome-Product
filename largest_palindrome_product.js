@@ -11,6 +11,26 @@ module.exports = function(digits){
   var palindromeNumber = 0;
 
   // do your work here
+  // function product(factor_0, factor_1) {
+  //   return factor_0 * factor_1;
+  // }
+  // console.log(product(10, 5));
+
+  // var numToStr = product.toString();
+  // console.log(product(10, 5) + " " + "is a " + typeof numToStr);
+
+  // var strToArr = numToStr.split();
+  // console.log(strToArr(10, 5));
+
+  function isPalindrome(factor_0, factor_1) {
+    var multiply = factor_0 * factor_1;
+    var numToStr = multiply.toString();
+    var strToArr = numToStr.split("");
+    return strToArr;
+  }
+
+  console.log(isPalindrome(10, 50));
+
 
 
 
