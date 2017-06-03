@@ -23,13 +23,18 @@ module.exports = function(digits){
   // console.log(strToArr(10, 5));
 
   function isPalindrome(factor_0, factor_1) {
-    var multiply = factor_0 * factor_1;
-    var numToStr = multiply.toString();
-    var strToArr = numToStr.split("");
-    return strToArr;
+    var product = factor_0 * factor_1;
+    var prodToStr = product.toString();
+    var strToArr = prodToStr.split("");
+
+    var leftArr = strToArr.slice(0, 2);
+    var rightArr = strToArr.slice(2, strToArr.length);
+
+    console.log("leftArr is " + leftArr);
+    console.log("rightArr is " + rightArr);
   }
 
-  console.log(isPalindrome(10, 50));
+  console.log(isPalindrome(91, 99)); // undefined cuz not returning anything
 
 
 
