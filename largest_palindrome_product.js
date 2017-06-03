@@ -32,6 +32,10 @@ module.exports = function(digits){
 
     console.log("leftArr is " + leftArr);
     console.log("rightArr is " + rightArr);
+
+    if (leftArr[0] === rightArr[1] && leftArr[1] === rightArr[0]) {
+      return true;
+    }
   }
 
   console.log(isPalindrome(91, 99)); // undefined cuz not returning anything
